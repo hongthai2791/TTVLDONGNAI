@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Tìm việc làm - Trung tâm Dịch vụ Việc làm Đồng Nai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }</style>
+  </head>
+  <body class="bg-gray-50 flex flex-col min-h-screen">
+    
+    <header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="main-header">
+      <div class="bg-blue-900 text-white py-1 text-xs hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <div class="flex gap-4">
+            <span class="flex items-center gap-1"><i class="fa fa-phone mr-1"></i> Hotline: 02513 894 810</span>
+            <span><i class="fa fa-envelope mr-1"></i> Email: vieclammoi.dongnai@gmail.com</span>
+          </div>
+          <div class="flex gap-3">
+            <a href="#" class="hover:text-yellow-400 transition-colors">Đăng nhập</a>
+            <span>|</span>
+            <a href="#" class="hover:text-yellow-400 transition-colors">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-red-700 font-bold border-2 border-red-700 group-hover:rotate-12 transition-transform duration-300">
+              LOGO
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-red-700 leading-tight uppercase">Trung tâm Dịch vụ Việc làm</h1>
+              <h2 class="text-lg font-bold text-blue-900 leading-none uppercase">Đồng Nai</h2>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex gap-6 font-medium text-gray-700 items-center">
+            <a href="gioi-thieu.html" class="hover:text-blue-700 transition-colors relative group">
+              Giới thiệu
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="tin-tuc.html" class="hover:text-blue-700 transition-colors relative group">
+              Tin tức
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="viec-lam.html" class="text-blue-700 font-bold relative group">
+              Việc làm
+              <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+            </a>
+            <a href="san-viec-lam.html" class="hover:text-blue-700 transition-colors relative group">
+              Sàn việc làm
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="bao-hiem-that-nghiep.html" class="hover:text-blue-700 transition-colors relative group">
+              Bảo hiểm thất nghiệp
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="van-ban.html" class="hover:text-blue-700 transition-colors relative group">
+              Văn bản
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all shadow-md text-sm">
+              Nhà tuyển dụng
+            </a>
+          </nav>
+
+          <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+            <i class="fa fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+        <div class="flex flex-col p-4 space-y-3 font-medium text-gray-700">
+          <a href="gioi-thieu.html" class="block py-2">Giới thiệu</a>
+          <a href="tin-tuc.html" class="block py-2">Tin tức & Sự kiện</a>
+          <a href="viec-lam.html" class="block py-2 text-blue-700 font-bold">Việc làm</a>
+          <a href="san-viec-lam.html" class="block py-2">Sàn việc làm</a>
+          <a href="bao-hiem-that-nghiep.html" class="block py-2">Bảo hiểm thất nghiệp</a>
+          <a href="van-ban.html" class="block py-2">Văn bản</a>
+          <a href="#" class="block py-2 text-blue-600">Đăng nhập / Đăng ký</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-gray-100 border-b border-gray-200 py-6">
+        <div class="container mx-auto px-4">
+             <div class="flex flex-col md:flex-row gap-4">
+                 <input type="text" placeholder="Tên công việc, vị trí..." class="flex-grow p-3 border rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                 <select class="p-3 border rounded shadow-sm md:w-48 bg-white"><option>Tất cả địa điểm</option><option>Biên Hòa</option><option>Long Thành</option></select>
+                 <select class="p-3 border rounded shadow-sm md:w-48 bg-white"><option>Tất cả ngành nghề</option><option>Kế toán</option><option>CNTT</option></select>
+                 <button class="bg-blue-600 text-white px-8 py-3 rounded font-bold shadow hover:bg-blue-700">Tìm kiếm</button>
+             </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Filter Sidebar -->
+            <div class="lg:col-span-1 space-y-6">
+                 <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-gray-800 mb-4 flex items-center"><i class="fa fa-filter mr-2 text-blue-600"></i> Lọc kết quả</h3>
+                    
+                    <div class="mb-4">
+                        <label class="block text-sm font-semibold mb-2">Mức lương</label>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-blue-600"> Dưới 5 triệu</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-blue-600"> 5 - 10 triệu</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-blue-600"> 10 - 15 triệu</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-blue-600"> Trên 20 triệu</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-blue-600"> Thỏa thuận</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-sm font-semibold mb-2">Kinh nghiệm</label>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <label class="flex items-center gap-2"><input type="radio" name="exp" class="rounded text-blue-600"> Không yêu cầu</label>
+                            <label class="flex items-center gap-2"><input type="radio" name="exp" class="rounded text-blue-600"> Dưới 1 năm</label>
+                            <label class="flex items-center gap-2"><input type="radio" name="exp" class="rounded text-blue-600"> 1 - 3 năm</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-sm font-semibold mb-2">Hình thức</label>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-blue-600"> Toàn thời gian</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-blue-600"> Bán thời gian</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-blue-600"> Thực tập</label>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Job List -->
+            <div class="lg:col-span-3">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="text-gray-600 text-sm">Tìm thấy <b class="text-blue-600">124</b> việc làm phù hợp</span>
+                    <select class="border rounded p-1 text-sm"><option>Mới nhất</option><option>Lương cao nhất</option></select>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Job Card Loop -->
+                    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-blue-300 transition flex flex-col md:flex-row gap-4 items-start">
+                        <div class="w-16 h-16 bg-gray-50 rounded flex items-center justify-center shrink-0 border border-gray-200 text-gray-400 font-bold">LOGO</div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-lg text-gray-800 hover:text-blue-600 cursor-pointer">Kế toán trưởng (Chief Accountant)</h3>
+                            <p class="text-gray-500 font-medium text-sm mb-2">CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ ABC</p>
+                            <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                                <span class="bg-gray-100 px-2 py-1 rounded flex items-center gap-1"><i class="fa fa-dollar text-gray-400"></i> 20 - 25 Triệu</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded flex items-center gap-1"><i class="fa fa-map-marker text-gray-400"></i> Biên Hòa</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded flex items-center gap-1"><i class="fa fa-briefcase text-gray-400"></i> 5 năm KN</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0 text-right">
+                             <button class="bg-blue-600 text-white px-4 py-1.5 rounded text-sm font-medium hover:bg-blue-700 block w-full mb-2">Ứng tuyển</button>
+                             <span class="text-xs text-red-500 bg-red-50 px-2 py-1 rounded">Hạn: 30/11/2024</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-blue-300 transition flex flex-col md:flex-row gap-4 items-start">
+                        <div class="w-16 h-16 bg-gray-50 rounded flex items-center justify-center shrink-0 border border-gray-200 text-gray-400 font-bold">LOGO</div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-lg text-gray-800 hover:text-blue-600 cursor-pointer">Nhân viên kinh doanh Bất động sản</h3>
+                            <p class="text-gray-500 font-medium text-sm mb-2">TẬP ĐOÀN ĐỊA ỐC XYZ</p>
+                            <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                                <span class="bg-gray-100 px-2 py-1 rounded flex items-center gap-1"><i class="fa fa-dollar text-gray-400"></i> Thỏa thuận</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded flex items-center gap-1"><i class="fa fa-map-marker text-gray-400"></i> Long Thành</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded flex items-center gap-1"><i class="fa fa-briefcase text-gray-400"></i> Không yêu cầu</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0 text-right">
+                             <button class="bg-blue-600 text-white px-4 py-1.5 rounded text-sm font-medium hover:bg-blue-700 block w-full mb-2">Ứng tuyển</button>
+                             <span class="text-xs text-gray-400">Hạn: 15/12/2024</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:border-blue-300 transition flex flex-col md:flex-row gap-4 items-start">
+                        <div class="w-16 h-16 bg-gray-50 rounded flex items-center justify-center shrink-0 border border-gray-200 text-gray-400 font-bold">LOGO</div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-lg text-gray-800 hover:text-blue-600 cursor-pointer">Công nhân lắp ráp điện tử</h3>
+                            <p class="text-gray-500 font-medium text-sm mb-2">CÔNG TY TNHH ĐIỆN TỬ SÀI GÒN</p>
+                            <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                                <span class="bg-gray-100 px-2 py-1 rounded flex items-center gap-1"><i class="fa fa-dollar text-gray-400"></i> 8 - 12 Triệu</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded flex items-center gap-1"><i class="fa fa-map-marker text-gray-400"></i> Nhơn Trạch</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded flex items-center gap-1"><i class="fa fa-briefcase text-gray-400"></i> Không yêu cầu</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0 text-right">
+                             <button class="bg-blue-600 text-white px-4 py-1.5 rounded text-sm font-medium hover:bg-blue-700 block w-full mb-2">Ứng tuyển</button>
+                             <span class="text-xs text-gray-400">Hạn: 30/12/2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Pagination -->
+                <div class="flex justify-center gap-2 mt-8">
+                    <button class="w-8 h-8 rounded border hover:bg-gray-100"><i class="fa fa-angle-left"></i></button>
+                    <button class="w-8 h-8 rounded bg-blue-600 text-white font-bold">1</button>
+                    <button class="w-8 h-8 rounded border hover:bg-gray-100">2</button>
+                    <button class="w-8 h-8 rounded border hover:bg-gray-100"><i class="fa fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Reuse Footer -->
+    <footer class="bg-blue-900 text-white pt-10 pb-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+             <p>© 2024 Trung tâm Dịch vụ Việc làm Đồng Nai.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if(btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    </script>
+  </body>
+</html>

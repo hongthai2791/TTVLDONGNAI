@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Sàn giao dịch việc làm - Trung tâm Dịch vụ Việc làm Đồng Nai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }</style>
+  </head>
+  <body class="bg-gray-50 flex flex-col min-h-screen">
+    
+    <header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="main-header">
+      <div class="bg-blue-900 text-white py-1 text-xs hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <div class="flex gap-4">
+            <span class="flex items-center gap-1"><i class="fa fa-phone mr-1"></i> Hotline: 02513 894 810</span>
+            <span><i class="fa fa-envelope mr-1"></i> Email: vieclammoi.dongnai@gmail.com</span>
+          </div>
+          <div class="flex gap-3">
+            <a href="#" class="hover:text-yellow-400 transition-colors">Đăng nhập</a>
+            <span>|</span>
+            <a href="#" class="hover:text-yellow-400 transition-colors">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-red-700 font-bold border-2 border-red-700 group-hover:rotate-12 transition-transform duration-300">
+              LOGO
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-red-700 leading-tight uppercase">Trung tâm Dịch vụ Việc làm</h1>
+              <h2 class="text-lg font-bold text-blue-900 leading-none uppercase">Đồng Nai</h2>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex gap-6 font-medium text-gray-700 items-center">
+            <a href="gioi-thieu.html" class="hover:text-blue-700 transition-colors relative group">
+              Giới thiệu
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="tin-tuc.html" class="hover:text-blue-700 transition-colors relative group">
+              Tin tức
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="viec-lam.html" class="hover:text-blue-700 transition-colors relative group">
+              Việc làm
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="san-viec-lam.html" class="text-blue-700 font-bold relative group">
+              Sàn việc làm
+              <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+            </a>
+            <a href="bao-hiem-that-nghiep.html" class="hover:text-blue-700 transition-colors relative group">
+              Bảo hiểm thất nghiệp
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="van-ban.html" class="hover:text-blue-700 transition-colors relative group">
+              Văn bản
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all shadow-md text-sm">
+              Nhà tuyển dụng
+            </a>
+          </nav>
+
+          <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+            <i class="fa fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+        <div class="flex flex-col p-4 space-y-3 font-medium text-gray-700">
+          <a href="gioi-thieu.html" class="block py-2">Giới thiệu</a>
+          <a href="tin-tuc.html" class="block py-2">Tin tức & Sự kiện</a>
+          <a href="viec-lam.html" class="block py-2">Việc làm</a>
+          <a href="san-viec-lam.html" class="block py-2 text-blue-700 font-bold">Sàn việc làm</a>
+          <a href="bao-hiem-that-nghiep.html" class="block py-2">Bảo hiểm thất nghiệp</a>
+          <a href="van-ban.html" class="block py-2">Văn bản</a>
+          <a href="#" class="block py-2 text-blue-600">Đăng nhập / Đăng ký</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Event Banner -->
+    <div class="relative bg-purple-900 text-white py-16 text-center">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <span class="bg-yellow-500 text-blue-900 font-bold px-4 py-1 rounded-full text-sm mb-4 inline-block">SẮP DIỄN RA</span>
+            <h1 class="text-4xl font-bold mb-4">SÀN GIAO DỊCH VIỆC LÀM LẦN THỨ 230</h1>
+            <p class="text-xl text-purple-200 mb-8">Kết nối trực tiếp - Phỏng vấn ngay - Có việc liền tay</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4 text-left max-w-2xl mx-auto mb-8 bg-purple-800 p-6 rounded-lg border border-purple-600">
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-purple-600 rounded flex items-center justify-center"><i class="fa fa-calendar"></i></div><div><div class="text-xs text-purple-300">Thời gian</div><div class="font-bold">08:00 - 10/11/2024</div></div></div>
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-purple-600 rounded flex items-center justify-center"><i class="fa fa-map-marker"></i></div><div><div class="text-xs text-purple-300">Địa điểm</div><div class="font-bold">Trung tâm DVVL Đồng Nai</div></div></div>
+            </div>
+            <div class="flex justify-center gap-4">
+                <button class="bg-white text-purple-900 font-bold px-8 py-3 rounded-full hover:bg-gray-100 shadow-lg">Đăng ký doanh nghiệp</button>
+                <button class="bg-yellow-500 text-blue-900 font-bold px-8 py-3 rounded-full hover:bg-yellow-400 shadow-lg">Đăng ký người lao động</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-10">DOANH NGHIỆP THAM GIA</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div class="bg-white border p-4 rounded-lg flex items-center justify-center h-24 grayscale hover:grayscale-0 transition duration-300 shadow-sm hover:shadow-md cursor-pointer"><span class="font-bold text-gray-500">VINAMILK</span></div>
+            <div class="bg-white border p-4 rounded-lg flex items-center justify-center h-24 grayscale hover:grayscale-0 transition duration-300 shadow-sm hover:shadow-md cursor-pointer"><span class="font-bold text-gray-500">VIETTEL</span></div>
+            <div class="bg-white border p-4 rounded-lg flex items-center justify-center h-24 grayscale hover:grayscale-0 transition duration-300 shadow-sm hover:shadow-md cursor-pointer"><span class="font-bold text-gray-500">SAM SUNG</span></div>
+            <div class="bg-white border p-4 rounded-lg flex items-center justify-center h-24 grayscale hover:grayscale-0 transition duration-300 shadow-sm hover:shadow-md cursor-pointer"><span class="font-bold text-gray-500">CP GROUP</span></div>
+            <div class="bg-white border p-4 rounded-lg flex items-center justify-center h-24 grayscale hover:grayscale-0 transition duration-300 shadow-sm hover:shadow-md cursor-pointer"><span class="font-bold text-gray-500">MASAN</span></div>
+            <div class="bg-white border p-4 rounded-lg flex items-center justify-center h-24 grayscale hover:grayscale-0 transition duration-300 shadow-sm hover:shadow-md cursor-pointer"><span class="font-bold text-gray-500">SUNHOUSE</span></div>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+                 <h3 class="text-xl font-bold text-blue-900 mb-4 border-l-4 border-yellow-500 pl-3">Sơ đồ sàn giao dịch</h3>
+                 <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center text-gray-500">
+                     [Hình ảnh sơ đồ bố trí các gian hàng]
+                 </div>
+            </div>
+             <div>
+                 <h3 class="text-xl font-bold text-blue-900 mb-4 border-l-4 border-yellow-500 pl-3">Lịch trình sự kiện</h3>
+                 <ul class="space-y-4">
+                     <li class="flex gap-4">
+                         <span class="font-bold text-purple-700 w-16">07:30</span>
+                         <span class="text-gray-700">Đón tiếp đại biểu và doanh nghiệp</span>
+                     </li>
+                     <li class="flex gap-4">
+                         <span class="font-bold text-purple-700 w-16">08:00</span>
+                         <span class="text-gray-700">Khai mạc Sàn giao dịch việc làm lần thứ 230</span>
+                     </li>
+                     <li class="flex gap-4">
+                         <span class="font-bold text-purple-700 w-16">08:30</span>
+                         <span class="text-gray-700">Phỏng vấn trực tiếp tại các gian hàng</span>
+                     </li>
+                     <li class="flex gap-4">
+                         <span class="font-bold text-purple-700 w-16">10:00</span>
+                         <span class="text-gray-700">Tọa đàm: "Kỹ năng phỏng vấn thời đại số"</span>
+                     </li>
+                     <li class="flex gap-4">
+                         <span class="font-bold text-purple-700 w-16">11:30</span>
+                         <span class="text-gray-700">Kết thúc phiên buổi sáng</span>
+                     </li>
+                 </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Reuse Footer -->
+    <footer class="bg-blue-900 text-white pt-10 pb-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+             <p>© 2024 Trung tâm Dịch vụ Việc làm Đồng Nai.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if(btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    </script>
+  </body>
+</html>

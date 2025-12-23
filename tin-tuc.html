@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Tin tức - Sự kiện | Trung tâm Dịch vụ Việc làm Đồng Nai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }</style>
+  </head>
+  <body class="bg-gray-50 flex flex-col min-h-screen">
+    
+    <header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="main-header">
+      <div class="bg-blue-900 text-white py-1 text-xs hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <div class="flex gap-4">
+            <span class="flex items-center gap-1"><i class="fa fa-phone mr-1"></i> Hotline: 02513 894 810</span>
+            <span><i class="fa fa-envelope mr-1"></i> Email: vieclammoi.dongnai@gmail.com</span>
+          </div>
+          <div class="flex gap-3">
+            <a href="#" class="hover:text-yellow-400 transition-colors">Đăng nhập</a>
+            <span>|</span>
+            <a href="#" class="hover:text-yellow-400 transition-colors">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-red-700 font-bold border-2 border-red-700 group-hover:rotate-12 transition-transform duration-300">
+              LOGO
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-red-700 leading-tight uppercase">Trung tâm Dịch vụ Việc làm</h1>
+              <h2 class="text-lg font-bold text-blue-900 leading-none uppercase">Đồng Nai</h2>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex gap-6 font-medium text-gray-700 items-center">
+            <a href="gioi-thieu.html" class="hover:text-blue-700 transition-colors relative group">
+              Giới thiệu
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="tin-tuc.html" class="text-blue-700 font-bold relative group">
+              Tin tức
+              <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+            </a>
+            <a href="viec-lam.html" class="hover:text-blue-700 transition-colors relative group">
+              Việc làm
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="san-viec-lam.html" class="hover:text-blue-700 transition-colors relative group">
+              Sàn việc làm
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="bao-hiem-that-nghiep.html" class="hover:text-blue-700 transition-colors relative group">
+              Bảo hiểm thất nghiệp
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="van-ban.html" class="hover:text-blue-700 transition-colors relative group">
+              Văn bản
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all shadow-md text-sm">
+              Nhà tuyển dụng
+            </a>
+          </nav>
+
+          <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+            <i class="fa fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+        <div class="flex flex-col p-4 space-y-3 font-medium text-gray-700">
+          <a href="gioi-thieu.html" class="block py-2">Giới thiệu</a>
+          <a href="tin-tuc.html" class="block py-2 text-blue-700 font-bold">Tin tức & Sự kiện</a>
+          <a href="viec-lam.html" class="block py-2">Việc làm</a>
+          <a href="san-viec-lam.html" class="block py-2">Sàn việc làm</a>
+          <a href="bao-hiem-that-nghiep.html" class="block py-2">Bảo hiểm thất nghiệp</a>
+          <a href="van-ban.html" class="block py-2">Văn bản</a>
+          <a href="#" class="block py-2 text-blue-600">Đăng nhập / Đăng ký</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">Tin tức & Sự kiện</h1>
+            <div class="text-sm text-blue-200 mt-2"><a href="index.html" class="hover:text-white">Trang chủ</a> / <span>Tin tức</span></div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Featured News -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer hover:shadow-md transition">
+                    <img src="https://picsum.photos/800/400" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Nổi bật</span>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition">Hội nghị kết nối cung cầu lao động khu vực Đông Nam Bộ năm 2024</h2>
+                        <p class="text-gray-500 text-sm mb-4">Sự kiện thu hút hơn 200 doanh nghiệp và 5000 người lao động tham gia...</p>
+                        <div class="flex items-center text-xs text-gray-400 gap-4"><span class="flex items-center gap-1"><i class="fa fa-calendar"></i> 25/10/2024</span><span class="flex items-center gap-1"><i class="fa fa-eye"></i> 1,234</span></div>
+                    </div>
+                </div>
+
+                <!-- News Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Item 1 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer group">
+                        <img src="https://picsum.photos/400/250?random=1" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-gray-800 mb-2 group-hover:text-blue-600 line-clamp-2">Triển khai chính sách hỗ trợ người lao động thất nghiệp đợt 3</h3>
+                            <span class="text-xs text-gray-400">20/10/2024</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer group">
+                        <img src="https://picsum.photos/400/250?random=2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-gray-800 mb-2 group-hover:text-blue-600 line-clamp-2">Đồng Nai: Nhu cầu tuyển dụng lao động phổ thông tăng cao dịp cuối năm</h3>
+                            <span class="text-xs text-gray-400">18/10/2024</span>
+                        </div>
+                    </div>
+                     <!-- Item 3 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer group">
+                        <img src="https://picsum.photos/400/250?random=3" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-gray-800 mb-2 group-hover:text-blue-600 line-clamp-2">Khai giảng lớp đào tạo nghề miễn phí cho lao động nông thôn</h3>
+                            <span class="text-xs text-gray-400">15/10/2024</span>
+                        </div>
+                    </div>
+                     <!-- Item 4 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer group">
+                        <img src="https://picsum.photos/400/250?random=4" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-gray-800 mb-2 group-hover:text-blue-600 line-clamp-2">Cảnh báo lừa đảo xuất khẩu lao động qua mạng xã hội</h3>
+                            <span class="text-xs text-gray-400">12/10/2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex justify-center gap-2 mt-8">
+                    <button class="w-8 h-8 rounded border hover:bg-gray-100"><i class="fa fa-angle-left"></i></button>
+                    <button class="w-8 h-8 rounded bg-blue-600 text-white font-bold">1</button>
+                    <button class="w-8 h-8 rounded border hover:bg-gray-100">2</button>
+                    <button class="w-8 h-8 rounded border hover:bg-gray-100">3</button>
+                    <button class="w-8 h-8 rounded border hover:bg-gray-100"><i class="fa fa-angle-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1 space-y-6">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
+                    <h3 class="font-bold text-blue-900 border-b border-gray-200 pb-2 mb-4">Chuyên mục</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="flex justify-between p-2 hover:bg-blue-50 rounded text-gray-700"><span>Tin hoạt động</span> <span class="bg-gray-100 px-2 rounded-full text-xs py-1">12</span></a></li>
+                        <li><a href="#" class="flex justify-between p-2 hover:bg-blue-50 rounded text-gray-700"><span>Chính sách mới</span> <span class="bg-gray-100 px-2 rounded-full text-xs py-1">5</span></a></li>
+                        <li><a href="#" class="flex justify-between p-2 hover:bg-blue-50 rounded text-gray-700"><span>Thị trường lao động</span> <span class="bg-gray-100 px-2 rounded-full text-xs py-1">8</span></a></li>
+                        <li><a href="#" class="flex justify-between p-2 hover:bg-blue-50 rounded text-gray-700"><span>Tuyển dụng</span> <span class="bg-gray-100 px-2 rounded-full text-xs py-1">45</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="bg-blue-900 rounded-lg p-6 text-white text-center">
+                    <h3 class="font-bold text-lg mb-2">Đăng ký nhận tin</h3>
+                    <p class="text-xs text-blue-200 mb-4">Nhận thông báo về việc làm và chính sách mới nhất.</p>
+                    <input type="email" placeholder="Email của bạn" class="w-full p-2 rounded text-gray-800 text-sm mb-2 focus:outline-none">
+                    <button class="w-full bg-yellow-500 text-blue-900 font-bold py-2 rounded text-sm hover:bg-yellow-400">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Reuse Footer -->
+    <footer class="bg-blue-900 text-white pt-10 pb-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+             <p>© 2024 Trung tâm Dịch vụ Việc làm Đồng Nai.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if(btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    </script>
+  </body>
+</html>

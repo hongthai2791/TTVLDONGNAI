@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Giới thiệu - Trung tâm Dịch vụ Việc làm Đồng Nai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; color: #1f2937; }
+      .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+      .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+  </head>
+  <body class="bg-gray-50 flex flex-col min-h-screen">
+    
+    <header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="main-header">
+      <div class="bg-blue-900 text-white py-1 text-xs hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <div class="flex gap-4">
+            <span class="flex items-center gap-1"><i class="fa fa-phone mr-1"></i> Hotline: 02513 894 810</span>
+            <span><i class="fa fa-envelope mr-1"></i> Email: vieclammoi.dongnai@gmail.com</span>
+          </div>
+          <div class="flex gap-3">
+            <a href="#" class="hover:text-yellow-400 transition-colors">Đăng nhập</a>
+            <span>|</span>
+            <a href="#" class="hover:text-yellow-400 transition-colors">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-red-700 font-bold border-2 border-red-700 group-hover:rotate-12 transition-transform duration-300">
+              LOGO
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-red-700 leading-tight uppercase">Trung tâm Dịch vụ Việc làm</h1>
+              <h2 class="text-lg font-bold text-blue-900 leading-none uppercase">Đồng Nai</h2>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex gap-6 font-medium text-gray-700 items-center">
+            <a href="gioi-thieu.html" class="text-blue-700 font-bold relative group">
+              Giới thiệu
+              <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+            </a>
+            <a href="tin-tuc.html" class="hover:text-blue-700 transition-colors relative group">
+              Tin tức
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="viec-lam.html" class="hover:text-blue-700 transition-colors relative group">
+              Việc làm
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="san-viec-lam.html" class="hover:text-blue-700 transition-colors relative group">
+              Sàn việc làm
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="bao-hiem-that-nghiep.html" class="hover:text-blue-700 transition-colors relative group">
+              Bảo hiểm thất nghiệp
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="van-ban.html" class="hover:text-blue-700 transition-colors relative group">
+              Văn bản
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all shadow-md text-sm">
+              Nhà tuyển dụng
+            </a>
+          </nav>
+
+          <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+            <i class="fa fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+        <div class="flex flex-col p-4 space-y-3 font-medium text-gray-700">
+          <a href="gioi-thieu.html" class="block py-2 text-blue-700 font-bold">Giới thiệu</a>
+          <a href="tin-tuc.html" class="block py-2">Tin tức & Sự kiện</a>
+          <a href="viec-lam.html" class="block py-2">Việc làm</a>
+          <a href="san-viec-lam.html" class="block py-2">Sàn việc làm</a>
+          <a href="bao-hiem-that-nghiep.html" class="block py-2">Bảo hiểm thất nghiệp</a>
+          <a href="van-ban.html" class="block py-2">Văn bản</a>
+          <a href="#" class="block py-2 text-blue-600">Đăng nhập / Đăng ký</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">Giới thiệu chung</h1>
+            <div class="text-sm text-blue-200 mt-2"><a href="index.html" class="hover:text-white">Trang chủ</a> / <span>Giới thiệu</span></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 sticky top-24">
+                    <h3 class="font-bold text-blue-900 border-b border-gray-200 pb-2 mb-4">Danh mục</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="block p-2 bg-blue-50 text-blue-700 font-semibold rounded">Giới thiệu chung</a></li>
+                        <li><a href="#" class="block p-2 text-gray-600 hover:bg-gray-50 rounded">Chức năng nhiệm vụ</a></li>
+                        <li><a href="#" class="block p-2 text-gray-600 hover:bg-gray-50 rounded">Cơ cấu tổ chức</a></li>
+                        <li><a href="#" class="block p-2 text-gray-600 hover:bg-gray-50 rounded">Sơ đồ đường đi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="lg:col-span-3 bg-white p-8 rounded-lg shadow-sm border border-gray-100 reveal active">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6">Trung tâm Dịch vụ Việc làm Đồng Nai</h2>
+                <div class="prose max-w-none text-gray-700 space-y-4 leading-relaxed">
+                    <img src="https://picsum.photos/800/400" alt="Trung tâm" class="w-full rounded-lg shadow mb-6 object-cover h-64">
+                    <p><span class="font-bold">Trung tâm Dịch vụ Việc làm Đồng Nai</span> là đơn vị sự nghiệp công lập trực thuộc Sở Lao động - Thương binh và Xã hội tỉnh Đồng Nai. Được thành lập với sứ mệnh kết nối người lao động và doanh nghiệp, góp phần ổn định thị trường lao động và đảm bảo an sinh xã hội trên địa bàn tỉnh.</p>
+                    
+                    <h3 class="text-xl font-bold text-gray-800 mt-6">Chức năng chính</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Tư vấn, giới thiệu việc làm cho người lao động và cung ứng lao động cho các doanh nghiệp trong và ngoài nước.</li>
+                        <li>Thu thập, phân tích, dự báo và cung cấp thông tin thị trường lao động.</li>
+                        <li>Thực hiện chính sách Bảo hiểm thất nghiệp theo quy định của pháp luật.</li>
+                        <li>Đào tạo, tập huấn kỹ năng tìm kiếm việc làm, kỹ năng mềm cho người lao động.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold text-gray-800 mt-6">Tầm nhìn và Sứ mệnh</h3>
+                    <p>Trở thành cầu nối tin cậy nhất giữa người lao động và người sử dụng lao động tại khu vực Đông Nam Bộ. Chúng tôi cam kết mang đến dịch vụ chuyên nghiệp, tận tâm và hiệu quả.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reuse Footer -->
+    <footer class="bg-blue-900 text-white pt-10 pb-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+             <p>© 2024 Trung tâm Dịch vụ Việc làm Đồng Nai.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if(btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    </script>
+  </body>
+</html>
